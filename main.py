@@ -14,7 +14,8 @@ chrome_driver_path = "/Users/william/Developer/Python/chromedriver"
 s = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=s)
 
-url = "https://www.linkedin.com/jobs/search/?f_AL=true&geoId=107161656&keywords=ios&location=Oxfordshire%2C%20England%2C%20United%20Kingdom"
+# url = "https://www.linkedin.com/jobs/search/?f_AL=true&geoId=107161656&keywords=ios&location=Oxfordshire%2C%20England%2C%20United%20Kingdom"
+url = "https://www.linkedin.com/jobs/search/?currentJobId=3025654523&f_AL=true&f_E=2%2C3&f_WT=2&geoId=102257491&keywords=python&location=London%2C%20England%2C%20United%20Kingdom&sortBy=R"
 
 driver.get(url)
 
@@ -38,5 +39,17 @@ login = driver.find_element(By.CLASS_NAME, "login__form_action_container")
 login.click()
 
 
+# Find and Click the "easy apply" button
+easy_apply = driver.find_element(By.CLASS_NAME, "jobs-apply-button")
+easy_apply.click()
+
+time.sleep(3)
+# Enter a phone number
+phone = driver.find_element(By.CSS_SELECTOR, "input.ember-text-field.ember-view.fb-single-line-text__input")
+phone.send_keys("1234567890")
+
+# Find and Click the "submit application" button
+# submit = driver.find_element(By.CSS_SELECTOR, "button.artdeco-button.artdeco-button--2.artdeco-button--primary ember-view")
+# submit.click()
 
 # driver.quit()
