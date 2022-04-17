@@ -4,8 +4,8 @@
 - 🌱 I’m currently learning more Python with the London App Brewery and Angela Yu's [100 Days of Code: 
 The Complete Python Pro Bootcamp for 2022](https://www.udemy.com/course/100-days-of-code/) on Udemy.  
 
-- 🧑‍💻 This Python project is part of an introduction to web scraping using Selenium and will scrap 
-- various information from the LinkedIn site, and allow one to submit a job application - given that one's
+- 🧑‍💻 This Python project is part of an introduction to web scraping using Selenium and will save 
+- job ads meeting criteria from the LinkedIn site.  Additionally, the company will be marked to follow   - given that one's
 - LinkedIn account is configured properly.
 
 - 💞️ I’m looking to collaborate on application development.
